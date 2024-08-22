@@ -44,7 +44,7 @@
 - Select CB2S Wi-Fi Module -> Next
 - Select Skip (we will be updating these details on yaml)
 - Edit device created
-- Copy contents of: BSD29.yaml
+- Copy contents of: BSD29.yaml: https://github.com/chris173972/my-tuya-devices-conversion/blob/main/wifi_plugs/BSD29/BSD29.yaml 
 - Select: Install
 - Select: Manual download
 - Please be patient. May take a while based upon machine used
