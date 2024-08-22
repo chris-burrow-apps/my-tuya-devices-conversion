@@ -1,6 +1,8 @@
 ﻿# BSD29
 ## Product Details
-![Overview](https://cdn.proprivacy.com/storage/images/proprivacy/2021/03/imageoptimjpg-content_image-default.png)
+![Overview](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/wifi_plugs/BSD29/BSD29_Overall.jpg?raw=true)
+![Overview](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/wifi_plugs/BSD29/BSD29_Inside.jpg?raw=true)
+![Overview](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/wifi_plugs/BSD29/BSD29_Details.jpg?raw=true)
 
 ## Project Used 
 - tuya-cloudcutter: https://github.com/tuya-cloudcutter/tuya-cloudcutter

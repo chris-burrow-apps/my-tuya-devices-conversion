@@ -1,0 +1,101 @@
+esphome:
+  name: esp-plug
+  friendly_name: ESP Plug
+  name_add_mac_suffix: true
+
+bk72xx:
+  board: cb2s
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: !secret esphome_api_pass
+
+ota:
+  - platform: esphome
+    password: !secret esphome_ota_pass
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "ESP-Plug"
+    password: "password"
+
+logger:
+
+web_server:
+
+captive_portal:
+
+mdns:
+
+debug:
+  update_interval: 60s
+
+text_sensor:
+  - platform: libretiny
+    version:
+      name: LibreTiny Version
+
+substitutions:
+  bl0937_voltage_divider: "750"
+  bl0937_current_resistor: "0.0025 ohm"
+
+# The main relay is connected to P26
+switch:
+  - platform: gpio
+    name: Socket
+    pin: P26
+    id: socket1
+    restore_mode: ALWAYS_ON 
+    on_turn_on:
+      then:
+        light.turn_on: led1
+    on_turn_off: 
+      then:
+        light.turn_off: led1
+
+# The LED is directly controlled via the state of the relay with the switch above
+light:
+  - platform: binary
+    name: "LED"
+    id: led1
+    output: light_output
+    internal: true
+
+output:
+  - id: light_output
+    platform: gpio
+    inverted: true
+    pin: P8
+
+# The pins were checked with a multimeter and the datasheet for the built in BL0937.
+sensor:
+  - platform: internal_temperature
+    name: "Internal Temperature"
+    update_interval: 60s
+  - platform: hlw8012
+    model: BL0937
+    cf_pin:
+      number: P7
+      inverted: true
+    cf1_pin:
+      number: P6
+      inverted: true
+    sel_pin:
+      number: P24
+      inverted: true
+    current:
+      name: Current
+    voltage:
+      name: Voltage
+    power:
+      name: Power
+    energy:
+      name: Energy
+    voltage_divider: $bl0937_voltage_divider
+    current_resistor: $bl0937_current_resistor
+    update_interval: 60s
