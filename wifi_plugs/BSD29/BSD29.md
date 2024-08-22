@@ -13,11 +13,12 @@
 - Docker Installed
 - Do not connect to network via wifi. Use Ethernet to keep Wifi free for the process
 
-## Process
+## Process - Do this at your own risk
 **Smartlife**
 - Check device firmware version within app: 1.1.7
- 
+
 **Terminal**:
+- Make sure you know this process is only one way so once done, this will no longer communicate with Tuya
 - git clone https://github.com/tuya-cloudcutter/tuya-cloudcutter
 - cd tuya-cloudcutter
 - sudo ./tuya-cloudcutter.sh
@@ -58,3 +59,5 @@
 - Open home assistant
 - Device should be detected within integrations 'add new device'
 - If not, select ESPHome, Add device
+
+**Star the project at https://github.com/tuya-cloudcutter/tuya-cloudcutter**
