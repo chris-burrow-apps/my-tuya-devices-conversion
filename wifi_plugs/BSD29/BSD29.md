@@ -10,7 +10,7 @@
 - Home Assistant -  https://www.home-assistant.io/
 
 ## Hardware Used
-- Hardware: Raspberry Pi 4
+- Hardware: Raspberry Pi 4 (https://github.com/tuya-cloudcutter/tuya-cloudcutter/blob/main/HOST_SPECIFIC_INSTRUCTIONS.md)
 - OS: Raspberry OS
 - Docker Installed
 - Do not connect to network via wifi. Use Ethernet to keep Wifi free for the process
