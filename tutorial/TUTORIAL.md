@@ -23,7 +23,8 @@ If this saved you some time. Maybe think about [giving me a tip](https://ko-fi.c
 
 ## Process - Do this at your own risk
 **Smartlife**
-![SmartLife Version](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/tutorial_smartlife_version.jpg?raw=true)
+
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/tutorial_smartlife_version.jpg?raw=true" alt="SmartLife Version" width="300"/>
 
 - Add your device to SmartLife to get your firmware version. This will be used to find out which version of OpenBeken you will need to hack the device. 
 - I use OpenBeken as it find it much easier to flash with this first and discover the config through it other than using other tools and guessing (email me if you have a easier way)
@@ -44,7 +45,7 @@ If this saved you some time. Maybe think about [giving me a tip](https://ko-fi.c
 
 **Download Tuya Config**
 
-![Get Tuya Config](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/tutorial_smartlife_version.jpg?raw=true)
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/OpenBK_Flash.png?raw=true" alt="Get Tuya Config" width="300"/>
 
 - Use a wifi device and search wifi
 - Connect to the wifi hotspot provided by the device, usually starts OpenBK...
@@ -62,8 +63,8 @@ If this saved you some time. Maybe think about [giving me a tip](https://ko-fi.c
 
 **Decompiling OpenBeken Config using Itchiptool**
 
-![Itchiptool](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Startpage.png?raw=true)
-![Itchiptool](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Sourcedata.png?raw=true)
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Startpage.png?raw=true" alt="Itchiptool" width="300"/>
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Sourcedata.png?raw=true" alt="Itchiptool" width="300"/>
 
 - Navigate to 'UPK2ESPHome'
 - Click 'Analyse firmware dump' and select the firmware you downloaded earlier.
@@ -83,8 +84,8 @@ If this saved you some time. Maybe think about [giving me a tip](https://ko-fi.c
 
 **ESPHome Config using Itchiptool**
 
-![Itchiptool](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Startpage.png?raw=true)
-![Itchiptool](https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_ESPHome_Config.png?raw=true)
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_Startpage.png?raw=true" alt="Itchiptool" width="300"/>
+<img src="https://github.com/chris173972/my-tuya-devices-conversion/blob/main/tutorial/Itchiptool_ESPHome_Config.png?raw=true" alt="Itchiptool" width="300"/>
 
 - Navigate to 'UPK2ESPHome'
 - Click 'Analyse firmware dump' and select the firmware you downloaded earlier.
